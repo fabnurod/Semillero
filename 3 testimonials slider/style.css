@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
+@media screen and (min-width: 400px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        line-height: 50px;
+        font-size: 32px;
+        color: #000000;
+    }
+
+    button {
+        width: 50%;
+        border: 0px;
+        background-color: transparent;
+    }
+    span{
+        font-size: 24px !important;
+        font-weight: bold;
+    }
+
+    #divButton {
+        display: flex;
+        width: 100px;
+        height: 50px;
+        background-color: #FFFFFF;
+        border: 1px solid #8585ac;
+        border-radius: 30px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 3px;
+        position: relative;
+        z-index: 10;
+        left: 70px;
+        margin-top: -45px;
+    }
+
+    #divContenido {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        padding-top: 5%;
+        width: 85%;
+    }
+
+    #dvDescription {
+        position: relative;
+        left: 450px;
+        z-index: 9;
+        white-space: break-spaces;
+        width: 70%;
+    }
+
+    #dvPhoto {
+        padding: 60px;
+        background-repeat: no-repeat;
+    }
+
+    #imgcurve {
+        display: flex;        
+        background-repeat: no-repeat;
+        bottom: 0px;
+        height: 181px;
+    }
+
+    #imgPhoto {
+        width: 540px;
+        height: 540px;
+        border-radius: 5px;
+        filter: drop-shadow(-2px 20px 30px rgba(0, 0, 0, 0.25));
+    }
+
+    #imgquotes {
+        left: 550px;
+        top: 55px;
+        position: relative
+    }
+
+}
+/****************************************mobile***********************************************/
+@media screen and (max-width: 400px) {
+    body {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        line-height: 20px;
+        font-size: 16px;
+        color: #000000;
+        width: 100%;
+    }
+
+    button {
+        width: 50%;
+        border: 0px;
+        background-color: transparent;
+    }
+    span{
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+    #divButton {
+        display: flex;
+        width: 70px;
+        height: 38px;
+        background-color: #FFFFFF;
+        border: 1px solid #8585ac;
+        border-radius: 30px;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 3px;
+        position: relative;
+        z-index: 10;
+        left: 130px;
+        margin-top: -45px;
+    }
+
+
+    #divContenido {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+
+    }
+
+    #dvDescription {
+        position: inherit;
+        z-index: 9;
+        white-space: break-spaces;
+        width: 100%;
+    }
+
+    #dvPhoto {
+        padding: 20px;
+        background-repeat: no-repeat;
+        position: inherit;
+        order: 1 !important;
+        width: 98% !important;
+        background-size: 95% 95%;
+   }
+
+    #divText {
+        position: inherit;
+        white-space: break-spaces;
+        width: 100%;
+        order: 2;
+    }
+
+    #imgcurve {
+        top: 0px;
+        width: 100%;
+        height: auto !important;
+        order: 3
+    }
+
+    #imgPhoto {
+        width: 85%;
+        align-items: center;
+        border-radius: 5px;
+        filter: drop-shadow(-2px 20px 30px rgba(0, 0, 0, 0.25));
+    }
+
+    #imgquotes {
+        position: absolute;        
+        left: 40%;
+        width: 15%;
+    }
+}
+

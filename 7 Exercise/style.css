@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{    
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Karla', sans-serif;
+    color: white;
+}
+button{
+    border: 0;
+    background-color: #38cc8cbe;
+    font-weight: 700;
+    font-size: 16px;    
+    color: white;
+    cursor: pointer;
+    line-height: 34px;
+    width: 80%;
+    border-radius: 10px;
+}
+p{
+    width: 90%;
+}
+small{
+    font-size: 18px;
+}
+.dvFlex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    color: #2AB2AF;
+    text-align: left;
+}
+.subtitle{    
+    font-size: 36px;
+    font-weight: 700;
+    color: #C0DF34;
+}
+.description
+{
+    font-size: 32px;
+    color: #9BA2A6;
+
+}
+.textButton{
+    font-size: 18px;
+    text-align: center;
+}
+.text_N1{
+    font-size: 26px;
+    text-align: left;
+}
+.text_N2{
+    font-size: 32px;
+    text-align: left;
+}
+.text_N3{
+    font-size: 18px;
+    text-align: left;
+    font-weight: 200;
+    line-height: 28px;
+}
+.textN{
+    width: 90%;
+}
+#dvTop{
+    background-color: white;
+    padding: 15px;
+}
+#dvBottom{
+    flex-direction: row;
+    height: auto;
+}
+#dvLeft{
+    display: flex;
+    flex-direction: column;
+    background-color: #2AB2AF;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 15px 0px 0px 15px;
+    gap: 30px;
+}
+#dvRight{
+    display: flex;
+    flex-direction: column;
+    background-color: #2ab2afbf;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 0px 15px 15px 0px;
+    gap: 30px;
+}
+#dvContainer{
+    min-height: 100vh;    
+}
+
+@media screen and (max-width: 500px) {
+    #dvContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    #dvBottom{
+        flex-direction: column;
+        width: 100%;
+    }
+    #dvRight{
+        width: 100%;
+        border-radius: 10px;
+    }
+    #dvLeft{
+        width: 100%;        
+        border-radius: 10px;
+    }
+    .title{
+        
+        font-weight: 700;
+        font-size: 28px;
+        text-align: left;
+    }
+    .subtitle{
+        font-weight: 700;
+        font-size: 24px;
+        text-align: left;
+    }
+    .description{
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+    .textButton{
+        font-size: 14px;
+        text-align: center;
+    }
+    .text_N1{
+        font-size: 18px;
+        text-align: left;
+    }
+    .text_N2{
+        font-size: 24px;
+        text-align: left;
+    }
+    .text_N3{
+        font-size: 14px;
+        text-align: left;
+        font-weight: 200;
+        line-height: 20px;
+    }
+    small{
+        font-size: 14px;
+    }
+
+}

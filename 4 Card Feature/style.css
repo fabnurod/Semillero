@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body{
+    font-family: 'Poppins';
+    padding: 30px;
+}
+
+#dvImg{
+    width: 90% !important;
+    text-align: right ; 
+    vertical-align: bottom;
+}
+
+.dvCard{
+    padding: 8%;
+    border: 1px solid #DADAE5;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.title{
+    color: #4C4E61;
+}
+.textCard{
+    color: #A3A5AE;
+}
+
+#dvTitle{
+    font-weight: 400;
+    text-align: center;
+    color: #4C4E61;
+    margin:0px auto;
+}
+#dvSubtitle{
+    font-weight: 600;
+    text-align: center;
+    color: #4C4E61;
+    margin:0px auto;
+}
+
+#dvTitdescription{
+    font-weight: 200;
+    text-align: center;
+    color: #A3A5AE;
+    margin:0px auto;
+}
+
+
+@media screen and (min-width: 400px) {  
+    img{
+        width: 64px;
+        height: 64px; 
+        
+    }  
+    #dvTitle{
+        font-size: 32px;
+        width: 30%;
+        margin:0px auto;
+    }
+    #dvSubtitle{
+        font-size: 32px;
+        line-height: 50px;
+        vertical-align: top !important;
+        width: 40%;
+    }
+
+    #dvTitdescription{
+        font-size: 18px;
+        width: 35%;
+    }
+
+    .dvCard{
+        width: 75%;
+        margin:0px auto;
+        vertical-align: center;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .dvPanels{
+        display: flex;
+        margin:0px auto;
+        align-items: center;
+    }
+    .title{
+        font-weight: 600;        
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .textCard{
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 22px;
+        padding-bottom: 8%;
+    }
+
+    #dvleft{
+        width: 32%;
+    }
+    #dvcenter{
+        width: 32%;
+        flex-direction: column;
+    }
+    #dvright{
+        width: 32%;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    img{
+        width: 40px;
+        height: 40px; 
+        
+    }
+    #dvTitle{
+        font-size: 16px;
+        width: 95%;
+    }
+    #dvSubtitle{
+        font-size: 16px;
+        width: 95%;
+    }
+
+    #dvTitdescription{
+        font-size: 12px;
+        width: 95%;
+    }
+    #dvContainer{
+        flex-direction: column;
+    }
+    #dvHeader{
+        order: 1;
+    }
+    #dvbody{        
+        order: 2;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title{
+        font-weight: 600;        
+        font-size: 14px;
+        line-height: 50px;
+        color: #4C4E61;
+    }
+    .textCard{
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 22px;
+        color: #A3A5AE;
+        padding-bottom: 10%;
+    }
+
+
+}
+
+
+
+
+

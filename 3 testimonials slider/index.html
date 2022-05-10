@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise Carrousel</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="main.js"></script>
+</head>
+
+<body onload="kick_off()">
+  <div id="divContenido">
+    <div id="divText">
+      <img id="imgquotes" src="images/pattern-quotes.svg" />
+      <div id="dvDescription" > </div>      
+    </div>
+
+    <div id="dvPhoto" style=" background-image: url('images/pattern-bg.svg');">
+      <img id="imgPhoto" />
+      <div id="divButton">
+        <button onclick="prev()">
+          <img src="images/icon-prev.svg" />
+        </button>
+        <button onclick="next()">
+          <img src="images/icon-next.svg" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <img id="imgcurve" src="images/pattern-curve.svg" />
+</body>
+
+</html>

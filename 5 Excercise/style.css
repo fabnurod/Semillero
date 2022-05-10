@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600&display=swap');
+body{
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+button{
+    background-image: linear-gradient(135deg, hsl(0,80%,86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 70px;
+    transition: opacity 0.2s ease;
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+	cursor: pointer;
+    position: relative;
+    margin-left: -50px;
+}
+
+input{
+    background-color: transparent;
+	border: 1px solid hsl(0, 36%, 70%);
+	border-radius: 50px;
+    font-size: 13px;
+	height: 35px;
+	width: 75%; 
+    padding-left: 20px;
+}
+input:focus {
+	border-width: 2px;
+	box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+	outline: none;
+}
+input::placeholder {
+	color: hsl(0, 36%, 70%);
+}
+small {
+	color: hsl(0, 93%, 68%);
+	display: none;    
+    margin-left: 30px;
+    margin-top: 50px;    
+    position: absolute;
+
+}
+#imgError {
+	display: none;
+    width: 23px;
+    height: 25px;
+    position: absolute;
+    margin-top: 42px; 
+    
+}
+
+
+#dvContainer{
+	display: flex;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#dvLeft{
+    width: 60%;
+    padding: 10% 10% 10% 15%;
+    display: flex;
+    flex-direction: column;
+}
+#dvRight{    
+    background-image: url('/images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+#dvTitle{
+    font-weight: 100 !important;
+    color: #CE9797;
+    letter-spacing: 0.22em;
+}
+#dvSubtitle{
+    font-weight: 800;
+    color: #413a3a;
+    letter-spacing: 10px;
+}
+
+#dvTitdescription{
+    font-weight: 400;
+    text-align: left;
+    color: #CE9797;    
+}
+#dvButton{
+    margin: 0;
+    display: flex;
+    
+}
+
+
+@media screen and (min-width: 500px) {  
+    #dvTitle{
+        font-size: 64px;
+        line-height: 64px;
+        width: 80%;
+    }
+    #dvSubtitle{
+        font-size: 64px;
+        line-height: 70px;
+        width: 80%;
+    }
+    
+    #dvTitdescription{
+        font-size: 16px;
+        line-height: 16px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #dvContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;        
+        align-items: center;
+        margin: 0;
+    }
+    #dvLeft{        
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        align-items: center;
+
+    }
+    #dvTitle{
+        font-size: 44px;
+        line-height: 44px;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 300px ;
+        width: auto;
+    }
+    #dvSubtitle{
+        order: 4 !important;
+        font-size: 44px;
+        line-height: 50px;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 350px ;
+        width: auto;
+        text-align: center;
+    }    
+    #dvTitdescription{
+        order: 5 !important;
+        font-size: 16px;
+        line-height: 16px;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 470px ;
+        width: 70%;
+        text-align: center;
+
+    }
+
+    #dvRight{        
+        background-image: url('images/hero-mobile.jpg') !important;        
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        position: relative;
+        margin-top: -30px;
+
+    }
+
+    #dvLogo{
+       display: flex;
+       position: absolute;
+       width: 80px;
+       height: 21px;
+       margin-top: -20px !important;
+       left: 50px  !important;
+       ;
+    }
+    
+
+    #dvButton{
+        display: flex;
+        position: absolute;
+        margin-top: 590px ;
+        margin-left: 50px;
+        width: 90%;
+        text-align: center;
+    }
+
+    
+
+}

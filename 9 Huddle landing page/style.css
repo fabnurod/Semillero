@@ -1,0 +1,315 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*===========================================Global Styles===========================================*/
+*{
+    box-sizing: border-box;
+}
+.dvFlex{
+    display: flex; 
+    justify-content: space-around;
+}
+
+/*===========================================Header Styles===========================================*/
+#imLogo{
+    max-width: 100%; 
+    height: auto;  
+}
+#dvHeader{
+    width: 100%; 
+    justify-content: space-between; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 15px; 
+    background-image: url('images/bg-hero-desktop.svg'); 
+    background-color: #def5fe59; gap: 40px;
+    font-family: 'Poppins';
+}
+#dvTopH{
+    width: 95%;  
+    display: flex;
+    justify-content: space-between;
+}
+#dvBottomH
+{
+    width: 98%; 
+    padding: 35px;
+}
+#dvLeft{
+    width: 50%; 
+    flex-direction: column; 
+}
+#dvRight{
+    width: 50%;
+}
+.textTitle{
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(192, 100%, 9%);
+}
+
+.textSubtitle{
+    font-weight: 200;
+    font-size: 20px;    
+    color: hsl(192, 100%, 9%);
+}
+/*===========================================Global Styles===========================================*/
+.dvBody{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+}
+.dvCard{
+    width: 90%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e5e5b3;
+    border-radius: 20px;
+    padding: 15px;
+}
+.left{
+    width: 65%;
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    justify-content: center; 
+    padding: 40px;
+}
+.miniatures{
+    width: 498px;
+    height: 408px;
+}
+#bntTIF{
+    width: 15%;
+    border-radius: 30px;
+    color: hsl(192,100%,9%);
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 700;
+    background-color: white;    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+}
+.htitle{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+.pCard{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: hsl(208, 11%, 55%)
+}
+
+#bntGSFF{    
+    width: 35%;
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF52C1;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline: none;
+    height: 38px;
+}
+#dvBuild{
+    width: 50%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e5e5b3;
+    border-radius: 20px;
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 999;
+    background-color: white;
+}
+/*===========================================Footer Styles===========================================*/
+.dvFooter{
+    background-color: #00252e;
+    margin-top: -50px;
+    padding: 80px 5px 20px 15px;
+    color: white;    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: 'Poppins';
+}
+
+.dvFheader{
+    width: 100%; 
+    gap: 10px; 
+    display: flex;
+    flex-direction: row;
+    font-size: 40px; 
+    color: white; 
+    font-weight: 900;    
+}
+
+.dvFheader div {
+    font-size: 40px; 
+    color: white; 
+    font-weight: 900;
+}
+
+.dvFbody{
+    display: flex;
+    font-family: 'Open Sans'; 
+    font-size: 12px; 
+    gap: 15px;
+    flex-direction: row;
+}
+.dvFbody > div{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#dvFleft > div {
+    gap: 10px; 
+    width:90%; 
+    display:flex; 
+    flex-direction: row;
+}
+#dvFmiddle{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+}
+#dvFmiddle > div{    
+    display: flex;
+    flex-direction: column;
+    white-space: break-spaces;
+    justify-content: space-between;
+}
+
+#dvFright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/*===========================================MOBILE===================================================*/
+@media screen and (max-width: 700px) {
+
+    #dvHeader{
+        display: flex;
+        flex-direction: column; 
+        padding: 15px; 
+        background-image: url('images/bg-hero-mobile.svg');
+        background-size: cover; 
+        /* background-color: #def5fe59;  */
+        gap: 40px;
+        font-family: 'Poppins';
+    }
+
+    #dvBottomH
+    {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+        
+    }
+    #dvLeft{
+        width: 100%;    
+        align-items: center;
+        gap: 25px;
+    }
+    #dvRight{
+        width: 100%;
+        gap: 50px;
+    }
+
+    #bntTIF{
+        width: 25%;
+    }
+    #bntGSFF{    
+        width: 55%;        
+        border-radius: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 38px;
+        text-align: center;
+    }
+    .dvCard{
+        width: 95%;
+        padding: 10px;
+        flex-direction: column-reverse;
+
+    }
+    .rev{
+        flex-direction: column-reverse
+    }
+    .left{
+        width: 100%;
+        padding: 15px;
+    }
+    .right{
+        width: 100%;
+    }
+    .miniatures{
+        width: 249px;
+        height: 204px; 
+    }
+    .htitle{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+    .pCard{
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+    }
+    #dvBuild{
+        flex-direction: column;
+        width: 75%;
+    }
+    #imLogo{
+        width: 45%;
+    }    
+    .textTitle{
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        color: hsl(192, 100%, 9%);
+    }    
+    .textSubtitle{
+        text-align: center;
+        font-weight: 200;
+        font-size: 18px;    
+        color: hsl(192, 100%, 9%);
+    }
+
+    .dvFooter{
+        flex-direction: column;
+    }
+
+    .dvFbody{
+        flex-direction: column;
+    }
+    .dvFbody > div{
+        width: 95%;
+    }
+    #dvFmiddle{
+        flex-direction: column;
+        gap: 0;
+    }
+    #dvFright{
+        align-items: center;
+        gap:20px;
+
+    }
+
+}
