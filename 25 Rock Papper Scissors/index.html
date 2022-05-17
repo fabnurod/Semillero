@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Rock Papper Scissors</title>
 </head>
 <body >
@@ -13,20 +14,37 @@
             <div class="title">ROCK <br>PAPPER <br>SCISSORS</div>
             <div id="score">
                 <div class="scoreText">SCORE</div>
-                <div class="scoreNumber">0</div>
+                <div id="scoreNumber" class="scoreNumber">0</div>
             </div>
         </div>
-        <div id="dvBody" >
+        <div id="dvBody" class="dvBody">
             <div id="dvTop">
-                <div><img id="papper" src="images/icon-paper.svg" alt="Papper" class="round"></div>
-                <div><img id="scissors" src="images/icon-scissors.svg" alt="Scissors" class="round"></div>
+                <div id="papper" class="papper push" onclick="selection(this)"><img src="images/icon-papper.svg" alt="Papper" class="round"></div>
+                <div id="scissors" class="scissors push" onclick="selection(this)"><img src="images/icon-scissors.svg" alt="Scissors" class="round"></div>
             </div>
-            <div id="dvBottom"><img id="rock" src="images/icon-rock.svg" alt="rock" class="round">
+            <div id="dvBottom" ><div id="rock" class="scissors push"onclick="selection(this)"><img src="images/icon-rock.svg" alt="rock" class="round"></div>
             </div>
+        </div>        
+        <div id="dvPlay">
+            <div id="dvLeft" class="play"><div>YOUR PICKED</div></div>
+            <div id="dvMiddle"><h5 id="hResult"></h5> <button id="bPlayAgain" onclick="playAgain()">PLAY AGAIN</button></div>
+            <div id="dvRight" class="play"><div>THE HOUSE PICKED</div></div>
         </div>
-        <div id="dvFooter">
-            <div id="dvRules">RULES</div>
+        <div id="dvFooter" onclick="showModal()">
+           <div id="dvRules">RULES</div>
         </div>
     </div>
+
+    <div id="dvModal" class="modal">
+        <div>
+            <div>
+                <div id="dRules"><strong>RULES</strong></div>
+                <div id="dClose" onclick="modalclose()">X</div>
+            </div>
+            
+            <img src="images/image-rules.svg" alt="Rules">
+        </div>
+    </div>
+
 </body>
 </html>

@@ -2,29 +2,136 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Barlow Semi Condensed';
     background: radial-gradient(circle, #1f3756, #141539);
     background-size: cover;
     padding: 20px 20px 0px 20px;
     color: white;
-
 }
+h2{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 58px;
+    color: #3B4363;
+}
+h5{
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 700;
+    font-size: 28px;
+}
+button{
+    background-color: white;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 700;
+    font-size: 14px;
+    color: #DD405D;
+    line-height: 40px;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */    
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal div{
+    background-color: #fefefe;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;;
+    border-radius: 20px;
+    max-height: 500px;
+}
+.modal div img{
+    width: 350px;
+}
+.modal div div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#dClose{
+    width: 50%;
+    color: #8A90AC;
+    font-size: 28px;
+    justify-content: flex-end;
+}
+
+#dRules{
+    width: 50%;
+    font-size: 28px;
+    align-items: flex-start;
+    color: #3B4363;
+} 
 .round{
     background-color: white;
-    border-radius: 50%;
-    padding: 20px;
-}
-#papper{
-    border: 15px solid #5671f5;
-}
-#scissors{
-    border: 15px solid #ECA922;
 
 }
+.push{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+}
+.papper{
+    border: 18px solid #5671f5;
+    justify-content: space-around;
+}
+#scissors{
+    border: 18px solid #ECA922;
+    justify-content: space-around;
+}
 #rock{
-    border: 15px solid #DD405D;
+    border: 18px solid #DD405D;
+    justify-content: space-around;
+}
+
+#dvPlay{    
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#dvPlay div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#dvPlay div div{
+    color: white;
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+}
+
+#dvLeft{
+    width: 35%;
+    justify-content: space-between;
+}
+#dvRight{
+    width: 35%;
+    justify-content: space-between;
+}
+#dvMiddle{
+    width: 30%;
+    /* justify-content: center; */
 }
 #dvFooter{
     display: flex;
@@ -32,7 +139,6 @@ body{
     width: 90%;
     justify-content: right;
 }
-
 #dvRules{
     border-radius: 5px;
     border: 3px solid #606E85;
@@ -48,10 +154,9 @@ body{
     width: 100%;
     height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-
 #dvHeader{
     width: 50%;
     display: flex;
@@ -61,7 +166,7 @@ body{
     border-radius: 10px;
     background-color: transparent;
 }
-#dvBody{
+.dvBody{
     width: 50%;
     display: flex;
     background-color: transparent;
@@ -75,16 +180,13 @@ body{
 #dvTop{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 #dvBottom{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
-
 .title{
     font-weight: 700;
     font-size: 42px;
@@ -123,16 +225,12 @@ body{
     #dvHeader{
         width: 85%;
     }
-
     .scoreNumber{
         font-size: 24px;
     }
     .scoreText{
         font-size: 12px;
     }
-
-
-
 }
 
 
